@@ -1,0 +1,10 @@
+18:58:52 **** Rebuild of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Application" "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Container" "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Application" "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Container" "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Container\\container.o" "..\\Container\\container.c" 
+gcc "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Application" "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Container" "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Application" "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Container" "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+
+18:58:54 Build Finished. 0 errors, 0 warnings. (took 2s.753ms)
+

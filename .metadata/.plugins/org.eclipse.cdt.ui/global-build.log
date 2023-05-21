@@ -1,0 +1,1511 @@
+09:44:03 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function 'AppNew':
+..\Application\app.c:104:3: error: unknown field 'm_pspace' specified in initializer
+   .m_pspace =(SDL_Rect){
+   ^
+..\Application\app.c:104:14: error: incompatible types when initializing type 'unsigned int' using type 'SDL_Rect {aka struct SDL_Rect}'
+   .m_pspace =(SDL_Rect){
+              ^
+09:44:30 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+09:44:54 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+..\Stars\star.c: In function 'StarNew':
+..\Stars\star.c:67:62: error: expected expression before ')' token
+    .x = ptCenter.x + iRadius*cos(k*2*M_PI/nSommets)*((k%2==0?)1:STAR_INTERNAL_RADIUS_RATIO),
+                                                              ^
+..\Stars\star.c:68:62: error: expected expression before ')' token
+    .y = ptCenter.y + iRadius*sin(k*2*M_PI/nSommets)*((k%2==0?)1:STAR_INTERNAL_RADIUS_RATIO),
+                                                              ^
+09:45:16 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+..\Stars\star.c: In function 'StarNew':
+..\Stars\star.c:67:61: error: expected expression before ')' token
+    .x = ptCenter.x + iRadius*cos(k*2*M_PI/nSommets)*(k%2==0?)1:STAR_INTERNAL_RADIUS_RATIO),
+                                                             ^
+..\Stars\star.c:67:90: error: expected ';' before ')' token
+    .x = ptCenter.x + iRadius*cos(k*2*M_PI/nSommets)*(k%2==0?)1:STAR_INTERNAL_RADIUS_RATIO),
+                                                                                          ^
+..\Stars\star.c:67:90: error: expected statement before ')' token
+..\Stars\star.c:67:91: error: expected expression before ',' token
+    .x = ptCenter.x + iRadius*cos(k*2*M_PI/nSommets)*(k%2==0?)1:STAR_INTERNAL_RADIUS_RATIO),
+                                                                                           ^
+..\Stars\star.c:67:91: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+..\Stars\star.c:68:90: error: expected statement before ')' token
+    .y = ptCenter.y + iRadius*sin(k*2*M_PI/nSommets)*(k%2==0?)1:STAR_INTERNAL_RADIUS_RATIO),
+                                                                                          ^
+..\Stars\star.c:68:91: error: expected expression before ',' token
+    .y = ptCenter.y + iRadius*sin(k*2*M_PI/nSommets)*(k%2==0?)1:STAR_INTERNAL_RADIUS_RATIO),
+                                                                                           ^
+..\Stars\star.c:68:91: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+..\Stars\star.c: At top level:
+..\Stars\star.c:85:2: error: expected identifier or '(' before 'return'
+  return pStar;
+  ^~~~~~
+..\Stars\star.c:86:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+..\Stars\star.c: In function 'StarNew':
+..\Stars\star.c:84:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+09:55:12 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+12:49:50 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+12:54:23 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Container\\container.o" "..\\Container\\container.c" 
+..\Container\container.c: In function 'ContainerFlush':
+..\Container\container.c:164:22: warning: statement with no effect [-Wunused-value]
+  pContainer->m_pTail == NULL;
+                      ^
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+12:54:51 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Container\\container.o" "..\\Container\\container.c" 
+..\Container\container.c: In function 'ContainerFlush':
+..\Container\container.c:164:22: warning: statement with no effect [-Wunused-value]
+  pContainer->m_pTail == pContainer->m_pHead;
+  ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+12:57:28 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Container\\container.o" "..\\Container\\container.c" 
+..\Container\container.c: In function 'ContainerFlush':
+..\Container\container.c:163:22: warning: statement with no effect [-Wunused-value]
+  pContainer->m_pTail == NULL;
+                      ^
+..\Container\container.c: In function 'ContainerParseDelIf':
+..\Container\container.c:267:11: warning: implicit declaration of function 'NodeDelOnlyReturnNext' [-Wimplicit-function-declaration]
+    pParse=NodeDelOnlyReturnNext(pParse);
+           ^~~~~~~~~~~~~~~~~~~~~
+..\Container\container.c:267:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    pParse=NodeDelOnlyReturnNext(pParse);
+          ^
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Container\container.o: In function `ContainerParseDelIf':
+C:\Users\Garnier\Desktop\Programmation\C\stars\NomPrenom_Base\Debug/../Container/container.c:267: undefined reference to `NodeDelOnlyReturnNext'
+collect2.exe: error: ld returned 1 exit status
+12:58:01 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Container\\container.o" "..\\Container\\container.c" 
+..\Container\container.c: In function 'ContainerFlush':
+..\Container\container.c:163:22: warning: statement with no effect [-Wunused-value]
+  pContainer->m_pTail == NULL;
+                      ^
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+13:05:52 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function '_AppTimerCallback':
+..\Application\app.c:389:52: error: incompatible type for argument 3 of 'ContainerParse'
+  ContainerParse(pApp->m_pStars, (t_ptfVV)StarMove, pApp->m_space);
+                                                    ^~~~
+In file included from ..\Application\app.c:24:0:
+C:\Users\Garnier\Desktop\Programmation\C\stars\NomPrenom_Base\Container/container.h:92:6: note: expected 'void *' but argument is of type 'SDL_Rect {aka struct SDL_Rect}'
+ void*ContainerParse(const t_container*pContainer, t_ptfVV pParseFunc, void*pParam);
+      ^~~~~~~~~~~~~~
+13:06:56 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+13:13:14 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+13:16:37 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+..\Stars\star.c: In function 'StarMove':
+..\Stars\star.c:170:23: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+  if(pStar->m_pVertices.x < pSpace->x){
+                       ^
+                       ->
+..\Stars\star.c:171:21: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+   pStar->m_pVertices.x = pSpace->x;
+                     ^
+                     ->
+..\Stars\star.c:174:23: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+  if(pStar->m_pVertices.y < pSpace->y){
+                       ^
+                       ->
+..\Stars\star.c:175:21: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+   pStar->m_pVertices.y = pSpace->y;
+                     ^
+                     ->
+..\Stars\star.c:178:23: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+  if(pStar->m_pVertices.x+ pStar->m_pVertices.w >=pSpace->w + pSpace->x){
+                       ^
+                       ->
+..\Stars\star.c:178:45: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+  if(pStar->m_pVertices.x+ pStar->m_pVertices.w >=pSpace->w + pSpace->x){
+                                             ^
+                                             ->
+..\Stars\star.c:179:21: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+   pStar->m_pVertices.x = pSpace->w + pSpace->x- pStar->m_pVertices.w ;
+                     ^
+                     ->
+..\Stars\star.c:179:67: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+   pStar->m_pVertices.x = pSpace->w + pSpace->x- pStar->m_pVertices.w ;
+                                                                   ^
+                                                                   ->
+..\Stars\star.c:182:23: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+  if(pStar->m_pVertices.y+ pStar->m_pVertices.h >=pSpace->h + pSpace->y){
+                       ^
+                       ->
+..\Stars\star.c:182:45: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+  if(pStar->m_pVertices.y+ pStar->m_pVertices.h >=pSpace->h + pSpace->y){
+                                             ^
+                                             ->
+..\Stars\star.c:183:21: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+   pStar->m_pVertices.y = pSpace->h + pSpace->y- pStar->m_pVertices.w;
+                     ^
+                     ->
+..\Stars\star.c:183:67: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+   pStar->m_pVertices.y = pSpace->h + pSpace->y- pStar->m_pVertices.w;
+                                                                   ^
+                                                                   ->
+13:16:42 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+..\Stars\star.c: In function 'StarMove':
+..\Stars\star.c:171:21: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+   pStar->m_pVertices.x = pSpace->x;
+                     ^
+                     ->
+..\Stars\star.c:174:23: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+  if(pStar->m_pVertices.y < pSpace->y){
+                       ^
+                       ->
+..\Stars\star.c:175:21: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+   pStar->m_pVertices.y = pSpace->y;
+                     ^
+                     ->
+..\Stars\star.c:178:23: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+  if(pStar->m_pVertices.x+ pStar->m_pVertices.w >=pSpace->w + pSpace->x){
+                       ^
+                       ->
+..\Stars\star.c:178:45: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+  if(pStar->m_pVertices.x+ pStar->m_pVertices.w >=pSpace->w + pSpace->x){
+                                             ^
+                                             ->
+..\Stars\star.c:179:21: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+   pStar->m_pVertices.x = pSpace->w + pSpace->x- pStar->m_pVertices.w ;
+                     ^
+                     ->
+..\Stars\star.c:179:67: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+   pStar->m_pVertices.x = pSpace->w + pSpace->x- pStar->m_pVertices.w ;
+                                                                   ^
+                                                                   ->
+..\Stars\star.c:182:23: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+  if(pStar->m_pVertices.y+ pStar->m_pVertices.h >=pSpace->h + pSpace->y){
+                       ^
+                       ->
+..\Stars\star.c:182:45: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+  if(pStar->m_pVertices.y+ pStar->m_pVertices.h >=pSpace->h + pSpace->y){
+                                             ^
+                                             ->
+..\Stars\star.c:183:21: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+   pStar->m_pVertices.y = pSpace->h + pSpace->y- pStar->m_pVertices.w;
+                     ^
+                     ->
+..\Stars\star.c:183:67: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+   pStar->m_pVertices.y = pSpace->h + pSpace->y- pStar->m_pVertices.w;
+                                                                   ^
+                                                                   ->
+13:16:55 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+..\Stars\star.c: In function 'StarMove':
+..\Stars\star.c:178:23: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+  if(pStar->m_pVertices.x+ pStar->m_pVertices.w >=pSpace->w + pSpace->x){
+                       ^
+                       ->
+..\Stars\star.c:178:45: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+  if(pStar->m_pVertices.x+ pStar->m_pVertices.w >=pSpace->w + pSpace->x){
+                                             ^
+                                             ->
+..\Stars\star.c:179:21: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+   pStar->m_pVertices.x = pSpace->w + pSpace->x- pStar->m_pVertices.w ;
+                     ^
+                     ->
+..\Stars\star.c:179:67: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+   pStar->m_pVertices.x = pSpace->w + pSpace->x- pStar->m_pVertices.w ;
+                                                                   ^
+                                                                   ->
+..\Stars\star.c:182:23: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+  if(pStar->m_pVertices.y+ pStar->m_pVertices.h >=pSpace->h + pSpace->y){
+                       ^
+                       ->
+..\Stars\star.c:182:45: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+  if(pStar->m_pVertices.y+ pStar->m_pVertices.h >=pSpace->h + pSpace->y){
+                                             ^
+                                             ->
+..\Stars\star.c:183:21: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+   pStar->m_pVertices.y = pSpace->h + pSpace->y- pStar->m_pVertices.w;
+                     ^
+                     ->
+..\Stars\star.c:183:67: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+   pStar->m_pVertices.y = pSpace->h + pSpace->y- pStar->m_pVertices.w;
+                                                                   ^
+                                                                   ->
+13:17:18 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+..\Stars\star.c: In function 'StarMove':
+..\Stars\star.c:178:46: error: 'SDL_Point {aka struct SDL_Point}' has no member named 'w'
+  if(pStar->m_pVertices->x+ pStar->m_pVertices->w >=pSpace->w + pSpace->x){
+                                              ^~
+..\Stars\star.c:179:68: error: 'SDL_Point {aka struct SDL_Point}' has no member named 'w'
+   pStar->m_pVertices->x = pSpace->w + pSpace->x- pStar->m_pVertices->w ;
+                                                                    ^~
+..\Stars\star.c:182:23: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+  if(pStar->m_pVertices.y+ pStar->m_pVertices.h >=pSpace->h + pSpace->y){
+                       ^
+                       ->
+..\Stars\star.c:182:45: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+  if(pStar->m_pVertices.y+ pStar->m_pVertices.h >=pSpace->h + pSpace->y){
+                                             ^
+                                             ->
+..\Stars\star.c:183:21: error: 'pStar->m_pVertices' is a pointer; did you mean to use '->'?
+   pStar->m_pVertices.y = pSpace->h + pSpace->y- pStar->m_pVertices->w;
+                     ^
+                     ->
+..\Stars\star.c:183:67: error: 'SDL_Point {aka struct SDL_Point}' has no member named 'w'
+   pStar->m_pVertices.y = pSpace->h + pSpace->y- pStar->m_pVertices->w;
+                                                                   ^~
+13:17:31 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+..\Stars\star.c:188:2: error: expected identifier or '(' before 'return'
+  return NULL;
+  ^~~~~~
+..\Stars\star.c:189:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+..\Stars\star.c: In function 'StarMove':
+..\Stars\star.c:186:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+13:17:41 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+13:17:55 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+13:47:56 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Container\\container.o" "..\\Container\\container.c" 
+..\Container\container.c: In function 'ContainerFlush':
+..\Container\container.c:163:22: warning: statement with no effect [-Wunused-value]
+  pContainer->m_pTail == NULL;
+                      ^
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+13:50:52 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function 'AppRun':
+..\Application\app.c:219:145: error: expected '}' before ')' token
+  pApp->pStarOne = StarNew((SDL_Point){rand()%(APP_WINDOW_WIDTH - APP_SPACE_PADDING*2)+APP_SPACE_PADDING, APP_WINDOW_HEIGHT - APP_SPACE_PADDING*2)+APP_SPACE_PADDING},
+                                                                                                                                                 ^
+..\Application\app.c:219:19: error: too few arguments to function 'StarNew'
+  pApp->pStarOne = StarNew((SDL_Point){rand()%(APP_WINDOW_WIDTH - APP_SPACE_PADDING*2)+APP_SPACE_PADDING, APP_WINDOW_HEIGHT - APP_SPACE_PADDING*2)+APP_SPACE_PADDING},
+                   ^~~~~~~
+In file included from ..\Application\app.c:23:0:
+C:\Users\Garnier\Desktop\Programmation\C\stars\NomPrenom_Base\Stars/star.h:40:8: note: declared here
+ t_star*StarNew(SDL_Point ptCenter, SDL_Point ptVelocity, size_t szBranches, int iRadius, SDL_Color color);
+        ^~~~~~~
+..\Application\app.c:219:164: error: expected ';' before '}' token
+  pApp->pStarOne = StarNew((SDL_Point){rand()%(APP_WINDOW_WIDTH - APP_SPACE_PADDING*2)+APP_SPACE_PADDING, APP_WINDOW_HEIGHT - APP_SPACE_PADDING*2)+APP_SPACE_PADDING},
+                                                                                                                                                                    ^
+..\Application\app.c:210:12: warning: unused variable 'event' [-Wunused-variable]
+  SDL_Event event;
+            ^~~~~
+..\Application\app.c:209:6: warning: unused variable 'iQuit' [-Wunused-variable]
+  int iQuit=0;
+      ^~~~~
+..\Application\app.c: At top level:
+..\Application\app.c:219:165: error: expected identifier or '(' before ',' token
+  pApp->pStarOne = StarNew((SDL_Point){rand()%(APP_WINDOW_WIDTH - APP_SPACE_PADDING*2)+APP_SPACE_PADDING, APP_WINDOW_HEIGHT - APP_SPACE_PADDING*2)+APP_SPACE_PADDING},
+                                                                                                                                                                     ^
+..\Application\app.c:220:24: error: expected identifier or '(' before ',' token
+        (SDL_Point){2,2},
+                        ^
+..\Application\app.c:223:35: error: expected identifier or '(' before ')' token
+        (SDL_Color){200,150,80,255});
+                                   ^
+..\Application\app.c:227:6: error: expected '=', ',', ';', 'asm' or '__attribute__' before '->' token
+  pApp->pStarTwo = StarNew((SDL_Point){100,100},
+      ^~
+..\Application\app.c:227:47: error: expected identifier or '(' before ',' token
+  pApp->pStarTwo = StarNew((SDL_Point){100,100},
+                                               ^
+..\Application\app.c:228:52: error: expected identifier or '(' before ',' token
+        (SDL_Point){rand()%(10-5)-5,rand()%(10-5)-5},
+                                                    ^
+..\Application\app.c:231:34: error: expected identifier or '(' before ')' token
+        (SDL_Color){20,250,80,255});
+                                  ^
+..\Application\app.c:236:2: error: expected identifier or '(' before 'while'
+  while(!iQuit){
+  ^~~~~
+..\Application\app.c:313:2: error: expected identifier or '(' before 'return'
+  return EXIT_SUCCESS;
+  ^~~~~~
+..\Application\app.c:314:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+..\Application\app.c: In function 'AppRun':
+..\Application\app.c:219:164: warning: control reaches end of non-void function [-Wreturn-type]
+  pApp->pStarOne = StarNew((SDL_Point){rand()%(APP_WINDOW_WIDTH - APP_SPACE_PADDING*2)+APP_SPACE_PADDING, APP_WINDOW_HEIGHT - APP_SPACE_PADDING*2)+APP_SPACE_PADDING},
+                                                                                                                                                                    ^
+13:51:04 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+13:51:08 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+13:52:18 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+13:54:17 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function 'AppRun':
+..\Application\app.c:223:20: error: called object is not a function or function pointer
+        (SDL_Color){rand()(255-100)+100,rand()(255-100)+100,rand()(255-100)+100,rand()(255-100)+100});
+                    ^~~~
+..\Application\app.c:223:40: error: called object is not a function or function pointer
+        (SDL_Color){rand()(255-100)+100,rand()(255-100)+100,rand()(255-100)+100,rand()(255-100)+100});
+                                        ^~~~
+..\Application\app.c:223:60: error: called object is not a function or function pointer
+        (SDL_Color){rand()(255-100)+100,rand()(255-100)+100,rand()(255-100)+100,rand()(255-100)+100});
+                                                            ^~~~
+..\Application\app.c:223:80: error: called object is not a function or function pointer
+        (SDL_Color){rand()(255-100)+100,rand()(255-100)+100,rand()(255-100)+100,rand()(255-100)+100});
+                                                                                ^~~~
+..\Application\app.c:231:20: error: called object is not a function or function pointer
+        (SDL_Color){rand()(255-100)+100,rand()(255-100)+100,rand()(255-100)+100,rand()(255-100)+100});
+                    ^~~~
+..\Application\app.c:231:40: error: called object is not a function or function pointer
+        (SDL_Color){rand()(255-100)+100,rand()(255-100)+100,rand()(255-100)+100,rand()(255-100)+100});
+                                        ^~~~
+..\Application\app.c:231:60: error: called object is not a function or function pointer
+        (SDL_Color){rand()(255-100)+100,rand()(255-100)+100,rand()(255-100)+100,rand()(255-100)+100});
+                                                            ^~~~
+..\Application\app.c:231:80: error: called object is not a function or function pointer
+        (SDL_Color){rand()(255-100)+100,rand()(255-100)+100,rand()(255-100)+100,rand()(255-100)+100});
+                                                                                ^~~~
+..\Application\app.c:233:1: warning: statement with no effect [-Wunused-value]
+ 0)+100});
+ ^
+..\Application\app.c:233:2: error: expected ';' before ')' token
+ 0)+100});
+  ^
+..\Application\app.c:233:2: error: expected statement before ')' token
+..\Application\app.c:233:3: warning: statement with no effect [-Wunused-value]
+ 0)+100});
+   ^
+..\Application\app.c:233:7: error: expected ';' before '}' token
+ 0)+100});
+       ^
+..\Application\app.c:210:12: warning: unused variable 'event' [-Wunused-variable]
+  SDL_Event event;
+            ^~~~~
+..\Application\app.c:209:6: warning: unused variable 'iQuit' [-Wunused-variable]
+  int iQuit=0;
+      ^~~~~
+..\Application\app.c: At top level:
+..\Application\app.c:233:8: error: expected identifier or '(' before ')' token
+ 0)+100});
+        ^
+..\Application\app.c:238:2: error: expected identifier or '(' before 'while'
+  while(!iQuit){
+  ^~~~~
+..\Application\app.c:315:2: error: expected identifier or '(' before 'return'
+  return EXIT_SUCCESS;
+  ^~~~~~
+..\Application\app.c:316:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+..\Application\app.c: In function 'AppRun':
+..\Application\app.c:233:7: warning: control reaches end of non-void function [-Wreturn-type]
+ 0)+100});
+       ^
+13:54:50 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function 'AppRun':
+..\Application\app.c:233:1: warning: statement with no effect [-Wunused-value]
+ 0)+100});
+ ^
+..\Application\app.c:233:2: error: expected ';' before ')' token
+ 0)+100});
+  ^
+..\Application\app.c:233:2: error: expected statement before ')' token
+..\Application\app.c:233:3: warning: statement with no effect [-Wunused-value]
+ 0)+100});
+   ^
+..\Application\app.c:233:7: error: expected ';' before '}' token
+ 0)+100});
+       ^
+..\Application\app.c:210:12: warning: unused variable 'event' [-Wunused-variable]
+  SDL_Event event;
+            ^~~~~
+..\Application\app.c:209:6: warning: unused variable 'iQuit' [-Wunused-variable]
+  int iQuit=0;
+      ^~~~~
+..\Application\app.c: At top level:
+..\Application\app.c:233:8: error: expected identifier or '(' before ')' token
+ 0)+100});
+        ^
+..\Application\app.c:238:2: error: expected identifier or '(' before 'while'
+  while(!iQuit){
+  ^~~~~
+..\Application\app.c:315:2: error: expected identifier or '(' before 'return'
+  return EXIT_SUCCESS;
+  ^~~~~~
+..\Application\app.c:316:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+..\Application\app.c: In function 'AppRun':
+..\Application\app.c:233:7: warning: control reaches end of non-void function [-Wreturn-type]
+ 0)+100});
+       ^
+13:54:58 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+13:58:58 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+..\Stars\star.c: In function 'StarMove':
+..\Stars\star.c:179:27: error: invalid type argument of '->' (have 'SDL_Point {aka struct SDL_Point}')
+   if(pStar->m_pVertices[k]->x >=pSpace->w + pSpace->x){
+                           ^~
+..\Stars\star.c:180:25: error: subscripted value is neither array nor pointer nor vector
+    pStar->m_pVertices->x[k] = pSpace->w + pSpace->x ;
+                         ^
+13:59:22 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+..\Stars\star.c: In function 'StarMove':
+..\Stars\star.c:180:25: error: subscripted value is neither array nor pointer nor vector
+    pStar->m_pVertices->x[k] = pSpace->w + pSpace->x ;
+                         ^
+13:59:34 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+13:59:56 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+14:02:11 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+14:04:25 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Container\\container.o" "..\\Container\\container.c" 
+..\Container\container.c: In function 'ContainerFlush':
+..\Container\container.c:163:22: warning: statement with no effect [-Wunused-value]
+  pContainer->m_pTail == NULL;
+                      ^
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+14:05:41 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Container\\container.o" "..\\Container\\container.c" 
+..\Container\container.c: In function 'ContainerFlush':
+..\Container\container.c:163:22: warning: statement with no effect [-Wunused-value]
+  pContainer->m_pTail == NULL;
+                      ^
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+14:07:16 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function '_AppTimerCallback':
+..\Application\app.c:359:15: warning: too many arguments for format [-Wformat-extra-args]
+   sprintf(buf,"STARTS NUMBER : ", ContainerCard(pApp->m_pStars));
+               ^~~~~~~~~~~~~~~~~~
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+14:07:31 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+14:08:06 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+15:20:45 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+15:23:28 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Container\\container.o" "..\\Container\\container.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+15:27:04 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+15:27:44 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+15:27:55 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+15:31:02 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+23:10:33 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:10:45 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:12:06 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function 'AppRun':
+..\Application\app.c:271:58: error: incompatible type for argument 3 of 'ContainerParse'
+       ContainerParse(pApp->m_pStars,(t_ptfVV)StarOffset, pApp->m_ptStart);
+                                                          ^~~~
+In file included from ..\Application\app.c:24:0:
+C:\Users\Garnier\Desktop\Programmation\C\stars\NomPrenom_Base\Container/container.h:92:6: note: expected 'void *' but argument is of type 'SDL_Point {aka struct SDL_Point}'
+ void*ContainerParse(const t_container*pContainer, t_ptfVV pParseFunc, void*pParam);
+      ^~~~~~~~~~~~~~
+23:12:13 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+23:14:24 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+23:16:04 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+23:16:32 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:17:02 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+..\Stars\star.c: In function 'StarMove':
+..\Stars\star.c:180:11: warning: return makes pointer from integer without a cast [-Wint-conversion]
+    return 1;
+           ^
+..\Stars\star.c:184:11: warning: return makes pointer from integer without a cast [-Wint-conversion]
+    return 1;
+           ^
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:18:30 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:19:42 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function 'AppRun':
+..\Application\app.c:286:26: warning: division by zero [-Wdiv-by-zero]
+        (SDL_Point){rand()%(APP_STAR_SPEED_MAX-APP_STAR_SPEED_MAX)-APP_STAR_SPEED_MAX,rand()%(APP_STAR_SPEED_MAX-APP_STAR_SPEED_MAX)-APP_STAR_SPEED_MAX},
+                          ^
+..\Application\app.c:286:92: warning: division by zero [-Wdiv-by-zero]
+        (SDL_Point){rand()%(APP_STAR_SPEED_MAX-APP_STAR_SPEED_MAX)-APP_STAR_SPEED_MAX,rand()%(APP_STAR_SPEED_MAX-APP_STAR_SPEED_MAX)-APP_STAR_SPEED_MAX},
+                                                                                            ^
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:19:56 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file NomPrenom_Base.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:20:04 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+23:20:24 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:22:12 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+23:25:21 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:27:37 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+..\Stars\star.c: In function 'StarMove':
+..\Stars\star.c:169:23: error: invalid operands to binary - (have 'SDL_Point {aka struct SDL_Point}' and 'int')
+  if(pStar->m_ptCenter -pStar->m_iRadius <= pSpace->x){
+     ~~~~~~~~~~~~~~~~~ ^~~~~~~~~~~~~~~~~
+..\Stars\star.c:172:23: error: invalid operands to binary - (have 'SDL_Point {aka struct SDL_Point}' and 'int')
+  if(pStar->m_ptCenter - pStar->m_iRadius < pSpace->y){
+     ~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~
+23:27:55 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+23:29:02 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:29:45 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:29:57 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:37:24 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function '_AppTimerCallback':
+..\Application\app.c:410:9: error: expected expression before 'int'
+   while(int i < rand()%( APP_STAR_NB_MAX- APP_STAR_NB_MIN)+ APP_STAR_NB_MIN){
+         ^~~
+..\Application\app.c:412:4: error: 'i' undeclared (first use in this function)
+    i++;
+    ^
+..\Application\app.c:412:4: note: each undeclared identifier is reported only once for each function it appears in
+23:37:42 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:38:37 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:39:09 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:40:26 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+23:41:00 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:41:07 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:41:21 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:42:22 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:42:36 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:42:49 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:43:06 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:43:29 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:44:26 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:45:33 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+23:46:18 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:46:42 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:47:04 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+23:48:05 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+09:13:36 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function '_AppTimerCallback':
+..\Application\app.c:361:11: warning: unused variable 'generate' [-Wunused-variable]
+  SDL_Rect generate = {1,1,1,1};
+           ^~~~~~~~
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:15:28 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+09:17:10 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:17:37 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:17:49 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:18:00 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:18:19 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:19:19 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function '_AppTimerCallback':
+..\Application\app.c:422:115: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+    ContainerPushback(pApp->m_pStars,StarNew((SDL_Point){rand()%(pApp->m_generateOrigin.x -APP_STAR_AREA_GEN_SIZE/2,rand()%(APP_WINDOW_HEIGHT - APP_SPACE_PADDING*2)+APP_SPACE_PADDING},
+                                                                                                                   ^
+..\Application\app.c:422:182: error: expected ')' before '}' token
+    ContainerPushback(pApp->m_pStars,StarNew((SDL_Point){rand()%(pApp->m_generateOrigin.x -APP_STAR_AREA_GEN_SIZE/2,rand()%(APP_WINDOW_HEIGHT - APP_SPACE_PADDING*2)+APP_SPACE_PADDING},
+                                                                                                                                                                                      ^
+09:19:32 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:20:56 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:21:17 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+09:21:59 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+09:24:10 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:24:24 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:28:25 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:28:47 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:29:38 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:29:54 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:30:14 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:30:26 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:31:13 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:35:09 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:35:45 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:35:56 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:43:17 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function '_AppTimerCallback':
+..\Application\app.c:422:160: error: invalid operands to binary - (have 'SDL_Point {aka struct SDL_Point}' and 'int')
+    ContainerPushback(pApp->m_pStars,StarNew((SDL_Point){rand()%(APP_WINDOW_WIDTH-(pApp->m_generateOrigin.x + APP_STAR_AREA_GEN_SIZE))+ (pApp->m_generateOrigin - APP_STAR_AREA_GEN_SIZE),rand()%(pApp->m_generateOrigin.x + APP_STAR_AREA_GEN_SIZE/2) +pApp->m_generateOrigin.y - APP_STAR_AREA_GEN_SIZE/2},
+                                                                                                                                         ~~~~~~~~~~~~~~~~~~~~~~ ^
+09:43:49 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function '_AppTimerCallback':
+..\Application\app.c:422:132: error: invalid operands to binary + (have 'int' and 'SDL_Point {aka struct SDL_Point}')
+    ContainerPushback(pApp->m_pStars,StarNew((SDL_Point){rand()%(APP_WINDOW_WIDTH-pApp->m_generateOrigin.x - APP_STAR_AREA_GEN_SIZE)+ pApp->m_generateOrigin - APP_STAR_AREA_GEN_SIZE,rand()%(pApp->m_generateOrigin.x + APP_STAR_AREA_GEN_SIZE/2) +pApp->m_generateOrigin.y - APP_STAR_AREA_GEN_SIZE/2},
+                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^ ~~~~~~~~~~~~~~~~~~~~~~
+09:44:15 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:44:28 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:44:40 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:44:50 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:45:06 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:45:16 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:45:43 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:45:57 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:46:34 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:46:59 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+09:48:15 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:48:35 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:48:53 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:49:53 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function '_AppTimerCallback':
+..\Application\app.c:422:197: error: invalid operands to binary % (have 'int' and 'double')
+    ContainerPushback(pApp->m_pStars,StarNew((SDL_Point){rand()%(APP_WINDOW_WIDTH - pApp->m_generateOrigin.x - APP_STAR_AREA_GEN_SIZE) + (pApp->m_generateOrigin.x - APP_STAR_AREA_GEN_SIZE/2),rand()%(APP_WINDOW_HEIGHT - pApp->m_generateOrigin.y - APP_STAR_AREA_GEN_SIZE*1.5) + (pApp->m_generateOrigin.y - APP_STAR_AREA_GEN_SIZE/2)},
+                                                                                                                                                                                               ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09:49:59 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:50:28 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+13:56:44 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+13:57:12 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\stars\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+18:11:39 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+18:14:09 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+..\Stars\star.c: In function 'StarNew':
+..\Stars\star.c:73:14: error: 'nSommets' undeclared (first use in this function)
+  for(k = 0;k<nSommets;k++){
+              ^~~~~~~~
+..\Stars\star.c:73:14: note: each undeclared identifier is reported only once for each function it appears in
+..\Stars\star.c:76:62: error: expected expression before ')' token
+    .x = ptCenter.x + iRadius*cos(k*2*M_PI/nSommets)*((k%2==0?)1:STAR_INTERNAL_RADIUS_RATIO),
+                                                              ^
+..\Stars\star.c:77:62: error: expected expression before ')' token
+    .y = ptCenter.y + iRadius*sin(k*2*M_PI/nSommets)*((k%2==0?)1:STAR_INTERNAL_RADIUS_RATIO),
+                                                              ^
+..\Stars\star.c:214:1: error: expected declaration or statement at end of input
+ }
+ ^
+..\Stars\star.c:62:9: warning: unused variable 'nbSommets' [-Wunused-variable]
+  size_t nbSommets = szBranches*2;
+         ^~~~~~~~~
+..\Stars\star.c:214:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+..\Stars\star.c:197:8: warning: 'StarOffset' defined but not used [-Wunused-function]
+ t_star*StarOffset(t_star*pStar, SDL_Point*pOffset){
+        ^~~~~~~~~~
+..\Stars\star.c:153:8: warning: 'StarMove' defined but not used [-Wunused-function]
+ t_star*StarMove(t_star*pStar, SDL_Rect*pSpace){
+        ^~~~~~~~
+..\Stars\star.c:126:8: warning: 'StarDraw' defined but not used [-Wunused-function]
+ t_star*StarDraw(const t_star*pStar, SDL_Renderer*pRenderer){
+        ^~~~~~~~
+..\Stars\star.c:106:8: warning: 'StarDel' defined but not used [-Wunused-function]
+ t_star*StarDel(t_star*pStar){
+        ^~~~~~~
+18:14:16 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+..\Stars\star.c: In function 'StarNew':
+..\Stars\star.c:76:43: error: 'nSommets' undeclared (first use in this function)
+    .x = ptCenter.x + iRadius*cos(k*2*M_PI/nSommets)*((k%2==0?)1:STAR_INTERNAL_RADIUS_RATIO),
+                                           ^~~~~~~~
+..\Stars\star.c:76:43: note: each undeclared identifier is reported only once for each function it appears in
+..\Stars\star.c:76:62: error: expected expression before ')' token
+    .x = ptCenter.x + iRadius*cos(k*2*M_PI/nSommets)*((k%2==0?)1:STAR_INTERNAL_RADIUS_RATIO),
+                                                              ^
+..\Stars\star.c:77:62: error: expected expression before ')' token
+    .y = ptCenter.y + iRadius*sin(k*2*M_PI/nSommets)*((k%2==0?)1:STAR_INTERNAL_RADIUS_RATIO),
+                                                              ^
+..\Stars\star.c:214:1: error: expected declaration or statement at end of input
+ }
+ ^
+..\Stars\star.c:214:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+..\Stars\star.c:197:8: warning: 'StarOffset' defined but not used [-Wunused-function]
+ t_star*StarOffset(t_star*pStar, SDL_Point*pOffset){
+        ^~~~~~~~~~
+..\Stars\star.c:153:8: warning: 'StarMove' defined but not used [-Wunused-function]
+ t_star*StarMove(t_star*pStar, SDL_Rect*pSpace){
+        ^~~~~~~~
+..\Stars\star.c:126:8: warning: 'StarDraw' defined but not used [-Wunused-function]
+ t_star*StarDraw(const t_star*pStar, SDL_Renderer*pRenderer){
+        ^~~~~~~~
+..\Stars\star.c:106:8: warning: 'StarDel' defined but not used [-Wunused-function]
+ t_star*StarDel(t_star*pStar){
+        ^~~~~~~
+18:14:38 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+..\Stars\star.c: In function 'StarNew':
+..\Stars\star.c:76:43: error: 'nSommets' undeclared (first use in this function)
+    .x = ptCenter.x + iRadius*cos(k*2*M_PI/nSommets)*((k%2==0?)1:STAR_INTERNAL_RADIUS_RATIO),
+                                           ^~~~~~~~
+..\Stars\star.c:76:43: note: each undeclared identifier is reported only once for each function it appears in
+..\Stars\star.c:76:62: error: expected expression before ')' token
+    .x = ptCenter.x + iRadius*cos(k*2*M_PI/nSommets)*((k%2==0?)1:STAR_INTERNAL_RADIUS_RATIO),
+                                                              ^
+..\Stars\star.c:77:62: error: expected expression before ')' token
+    .y = ptCenter.y + iRadius*sin(k*2*M_PI/nSommets)*((k%2==0?)1:STAR_INTERNAL_RADIUS_RATIO),
+                                                              ^
+..\Stars\star.c:214:1: error: expected declaration or statement at end of input
+ }
+ ^
+..\Stars\star.c:214:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+..\Stars\star.c:197:8: warning: 'StarOffset' defined but not used [-Wunused-function]
+ t_star*StarOffset(t_star*pStar, SDL_Point*pOffset){
+        ^~~~~~~~~~
+..\Stars\star.c:153:8: warning: 'StarMove' defined but not used [-Wunused-function]
+ t_star*StarMove(t_star*pStar, SDL_Rect*pSpace){
+        ^~~~~~~~
+..\Stars\star.c:126:8: warning: 'StarDraw' defined but not used [-Wunused-function]
+ t_star*StarDraw(const t_star*pStar, SDL_Renderer*pRenderer){
+        ^~~~~~~~
+..\Stars\star.c:106:8: warning: 'StarDel' defined but not used [-Wunused-function]
+ t_star*StarDel(t_star*pStar){
+        ^~~~~~~
+18:15:24 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+..\Stars\star.c: In function 'StarNew':
+..\Stars\star.c:76:63: error: expected expression before ')' token
+    .x = ptCenter.x + iRadius*cos(k*2*M_PI/nbSommets)*((k%2==0?)1:STAR_INTERNAL_RADIUS_RATIO),
+                                                               ^
+..\Stars\star.c:77:63: error: expected expression before ')' token
+    .y = ptCenter.y + iRadius*sin(k*2*M_PI/nbSommets)*((k%2==0?)1:STAR_INTERNAL_RADIUS_RATIO),
+                                                               ^
+..\Stars\star.c:214:1: error: expected declaration or statement at end of input
+ }
+ ^
+..\Stars\star.c:214:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+..\Stars\star.c:197:8: warning: 'StarOffset' defined but not used [-Wunused-function]
+ t_star*StarOffset(t_star*pStar, SDL_Point*pOffset){
+        ^~~~~~~~~~
+..\Stars\star.c:153:8: warning: 'StarMove' defined but not used [-Wunused-function]
+ t_star*StarMove(t_star*pStar, SDL_Rect*pSpace){
+        ^~~~~~~~
+..\Stars\star.c:126:8: warning: 'StarDraw' defined but not used [-Wunused-function]
+ t_star*StarDraw(const t_star*pStar, SDL_Renderer*pRenderer){
+        ^~~~~~~~
+..\Stars\star.c:106:8: warning: 'StarDel' defined but not used [-Wunused-function]
+ t_star*StarDel(t_star*pStar){
+        ^~~~~~~
+18:16:11 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+..\Stars\star.c: In function 'StarNew':
+..\Stars\star.c:214:1: error: expected declaration or statement at end of input
+ }
+ ^
+..\Stars\star.c:214:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+..\Stars\star.c:197:8: warning: 'StarOffset' defined but not used [-Wunused-function]
+ t_star*StarOffset(t_star*pStar, SDL_Point*pOffset){
+        ^~~~~~~~~~
+..\Stars\star.c:153:8: warning: 'StarMove' defined but not used [-Wunused-function]
+ t_star*StarMove(t_star*pStar, SDL_Rect*pSpace){
+        ^~~~~~~~
+..\Stars\star.c:126:8: warning: 'StarDraw' defined but not used [-Wunused-function]
+ t_star*StarDraw(const t_star*pStar, SDL_Renderer*pRenderer){
+        ^~~~~~~~
+..\Stars\star.c:106:8: warning: 'StarDel' defined but not used [-Wunused-function]
+ t_star*StarDel(t_star*pStar){
+        ^~~~~~~
+18:16:37 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+15:03:14 **** Rebuild of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Container\\container.o" "..\\Container\\container.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+15:03:53 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+15:04:41 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+15:06:20 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function '_AppTimerCallback':
+..\Application\app.c:422:214: error: expected ')' before '}' token
+    ContainerPushback(pApp->m_pStars,StarNew(rand()%(pApp->m_MousePosition.x - APP_STAR_AREA_GEN_SIZE/2)+APP_STAR_AREA_GEN_SIZE/2,rand()%(pApp->m_MousePosition.y - APP_STAR_AREA_GEN_SIZE/2)+APP_STAR_AREA_GEN_SIZE/2},
+                                                                                                                                                                                                                      ^
+..\Application\app.c:422:45: error: incompatible type for argument 1 of 'StarNew'
+    ContainerPushback(pApp->m_pStars,StarNew(rand()%(pApp->m_MousePosition.x - APP_STAR_AREA_GEN_SIZE/2)+APP_STAR_AREA_GEN_SIZE/2,rand()%(pApp->m_MousePosition.y - APP_STAR_AREA_GEN_SIZE/2)+APP_STAR_AREA_GEN_SIZE/2},
+                                             ^~~~
+In file included from ..\Application\app.c:23:0:
+C:\Users\Garnier\Desktop\Programmation\C\DS_STARS\NomPrenom_Base\Stars/star.h:40:8: note: expected 'SDL_Point {aka struct SDL_Point}' but argument is of type 'int'
+ t_star*StarNew(SDL_Point ptCenter, SDL_Point ptVelocity, size_t szBranches, int iRadius, SDL_Color color);
+        ^~~~~~~
+..\Application\app.c:422:130: error: incompatible type for argument 2 of 'StarNew'
+    ContainerPushback(pApp->m_pStars,StarNew(rand()%(pApp->m_MousePosition.x - APP_STAR_AREA_GEN_SIZE/2)+APP_STAR_AREA_GEN_SIZE/2,rand()%(pApp->m_MousePosition.y - APP_STAR_AREA_GEN_SIZE/2)+APP_STAR_AREA_GEN_SIZE/2},
+                                                                                                                                  ^~~~
+In file included from ..\Application\app.c:23:0:
+C:\Users\Garnier\Desktop\Programmation\C\DS_STARS\NomPrenom_Base\Stars/star.h:40:8: note: expected 'SDL_Point {aka struct SDL_Point}' but argument is of type 'int'
+ t_star*StarNew(SDL_Point ptCenter, SDL_Point ptVelocity, size_t szBranches, int iRadius, SDL_Color color);
+        ^~~~~~~
+..\Application\app.c:422:37: error: too few arguments to function 'StarNew'
+    ContainerPushback(pApp->m_pStars,StarNew(rand()%(pApp->m_MousePosition.x - APP_STAR_AREA_GEN_SIZE/2)+APP_STAR_AREA_GEN_SIZE/2,rand()%(pApp->m_MousePosition.y - APP_STAR_AREA_GEN_SIZE/2)+APP_STAR_AREA_GEN_SIZE/2},
+                                     ^~~~~~~
+In file included from ..\Application\app.c:23:0:
+C:\Users\Garnier\Desktop\Programmation\C\DS_STARS\NomPrenom_Base\Stars/star.h:40:8: note: declared here
+ t_star*StarNew(SDL_Point ptCenter, SDL_Point ptVelocity, size_t szBranches, int iRadius, SDL_Color color);
+        ^~~~~~~
+..\Application\app.c:422:214: error: expected ')' before '}' token
+    ContainerPushback(pApp->m_pStars,StarNew(rand()%(pApp->m_MousePosition.x - APP_STAR_AREA_GEN_SIZE/2)+APP_STAR_AREA_GEN_SIZE/2,rand()%(pApp->m_MousePosition.y - APP_STAR_AREA_GEN_SIZE/2)+APP_STAR_AREA_GEN_SIZE/2},
+                                                                                                                                                                                                                      ^
+..\Application\app.c:422:214: error: expected ';' before '}' token
+..\Application\app.c:422:215: error: expected expression before ',' token
+    ContainerPushback(pApp->m_pStars,StarNew(rand()%(pApp->m_MousePosition.x - APP_STAR_AREA_GEN_SIZE/2)+APP_STAR_AREA_GEN_SIZE/2,rand()%(pApp->m_MousePosition.y - APP_STAR_AREA_GEN_SIZE/2)+APP_STAR_AREA_GEN_SIZE/2},
+                                                                                                                                                                                                                       ^
+..\Application\app.c:422:215: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+..\Application\app.c:423:121: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+           (SDL_Point){rand()%(APP_STAR_SPEED_MAX*2)-APP_STAR_SPEED_MAX,rand()%(APP_STAR_SPEED_MAX*2)-APP_STAR_SPEED_MAX},
+                                                                                                                         ^
+..\Application\app.c:426:107: error: expected ';' before ')' token
+           (SDL_Color){rand()%(255-100)+100,rand()%(255-100)+100,rand()%(255-100)+100,rand()%(255-100)+100}));
+                                                                                                           ^
+..\Application\app.c:426:107: error: expected statement before ')' token
+..\Application\app.c:426:108: error: expected statement before ')' token
+           (SDL_Color){rand()%(255-100)+100,rand()%(255-100)+100,rand()%(255-100)+100,rand()%(255-100)+100}));
+                                                                                                            ^
+..\Application\app.c:429:3: error: 'i' undeclared (first use in this function)
+   i=0;
+   ^
+..\Application\app.c:429:3: note: each undeclared identifier is reported only once for each function it appears in
+..\Application\app.c: At top level:
+..\Application\app.c:433:24: error: expected ')' before '->' token
+  ContainerPushback(pApp->m_pStars,StarNew((SDL_Point){rand()%(pApp->m_ptStart.x - APP_STAR_AREA_GEN_SIZE/2)+APP_STAR_AREA_GEN_SIZE/2,
+                        ^~
+..\Application\app.c: In function '_AppTimerCallback':
+..\Application\app.c:431:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+15:06:51 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function '_AppTimerCallback':
+..\Application\app.c:440:26: error: expected '}' before ';' token
+  pApp->m_generateTimer --;
+                          ^
+..\Application\app.c:443:1: error: expected ')' at end of input
+ }
+ ^
+..\Application\app.c:433:35: error: too few arguments to function 'StarNew'
+  ContainerPushback(pApp->m_pStars,StarNew((SDL_Point){rand()%(pApp->m_ptStart.x - APP_STAR_AREA_GEN_SIZE/2)+APP_STAR_AREA_GEN_SIZE/2,
+                                   ^~~~~~~
+In file included from ..\Application\app.c:23:0:
+C:\Users\Garnier\Desktop\Programmation\C\DS_STARS\NomPrenom_Base\Stars/star.h:40:8: note: declared here
+ t_star*StarNew(SDL_Point ptCenter, SDL_Point ptVelocity, size_t szBranches, int iRadius, SDL_Color color);
+        ^~~~~~~
+..\Application\app.c:443:1: error: expected declaration or statement at end of input
+ }
+ ^
+..\Application\app.c:443:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+15:06:59 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+15:07:42 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+15:08:09 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+15:09:21 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+15:10:17 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+15:10:40 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+15:11:03 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+15:21:54 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Container\\container.o" "..\\Container\\container.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+15:22:59 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+09:25:46 **** Rebuild of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Container\\container.o" "..\\Container\\container.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:26:02 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:27:20 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+..\Stars\star.c: In function 'StarDraw':
+..\Stars\star.c:137:54: error: incompatible type for argument 3 of 'SDL_RenderDrawPoints'
+  SDL_RenderDrawPoints(pRenderer, pStar->m_pVertices, pStar->m_ptVelocity);
+                                                      ^~~~~
+In file included from c:\mingw\include\sdl2\sdl.h:53:0,
+                 from ..\Stars\star.c:12:
+c:\mingw\include\sdl2\SDL_render.h:1043:29: note: expected 'int' but argument is of type 'SDL_Point {aka const struct SDL_Point}'
+ extern DECLSPEC int SDLCALL SDL_RenderDrawPoints(SDL_Renderer * renderer,
+                             ^~~~~~~~~~~~~~~~~~~~
+09:27:58 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+09:28:42 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+..\Stars\star.c: In function 'StarNew':
+..\Stars\star.c:81:22: warning: 'k' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    pStar->m_pVertices[k] =(SDL_Point){
+                      ^
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:29:01 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+10:49:14 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+13:39:55 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+08:24:44 **** Rebuild of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Container\\container.o" "..\\Container\\container.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+09:03:19 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:13:07 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:13:26 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:19:18 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+09:19:31 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+Info: Nothing to build for NomPrenom_Base
+08:14:32 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+08:15:23 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+08:16:49 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function '_AppTimerCallback':
+..\Application\app.c:369:40: warning: passing argument 2 of 'SDL_RenderDrawRect' from incompatible pointer type [-Wincompatible-pointer-types]
+  SDL_RenderDrawRect(pApp->m_pRenderer, &pApp->m_generateOrigin);
+                                        ^
+In file included from c:\mingw\include\sdl2\sdl.h:53:0,
+                 from ..\Application\app.c:20:
+c:\mingw\include\sdl2\SDL_render.h:1124:29: note: expected 'const SDL_Rect * {aka const struct SDL_Rect *}' but argument is of type 'SDL_Point * {aka struct SDL_Point *}'
+ extern DECLSPEC int SDLCALL SDL_RenderDrawRect(SDL_Renderer * renderer,
+                             ^~~~~~~~~~~~~~~~~~
+..\Application\app.c:360:11: warning: unused variable 'generate' [-Wunused-variable]
+  SDL_Rect generate = {pApp->m_generateOrigin.x -APP_STAR_AREA_GEN_SIZE/2,
+           ^~~~~~~~
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+08:17:16 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+08:17:53 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+08:37:57 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+08:38:18 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+08:39:09 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+08:41:12 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+08:53:20 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+08:53:39 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+08:54:18 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+21:28:07 **** Rebuild of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Container\\container.o" "..\\Container\\container.c" 
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+21:29:09 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+21:29:52 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Container\\container.o" "..\\Container\\container.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+21:30:09 **** Incremental Build of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Application" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Container" "-IC:\\Users\\Garnier\\Desktop\\Programmation\\C\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Container\\container.o" "..\\Container\\container.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+Info: Nothing to build for NomPrenom_Base
+18:58:52 **** Rebuild of configuration Debug for project NomPrenom_Base ****
+Info: Internal Builder is used for build
+gcc "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Application" "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Container" "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Application" "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Container" "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Container\\container.o" "..\\Container\\container.c" 
+gcc "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Application" "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Container" "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Application" "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Container" "-ID:\\Programmation\\Git Hub\\DS_STARS\\NomPrenom_Base\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o NomPrenom_Base "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+18:59:22 **** Rebuild of configuration Debug for project Stars ****
+Info: Internal Builder is used for build
+gcc "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Application" "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Container" "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Application" "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Container" "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Application" "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Container" "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Application" "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Container" "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Container\\container.o" "..\\Container\\container.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o Stars "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 

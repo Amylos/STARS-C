@@ -1,0 +1,10 @@
+18:59:22 **** Rebuild of configuration Debug for project Stars ****
+Info: Internal Builder is used for build
+gcc "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Application" "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Container" "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Stars\\star.o" "..\\Stars\\star.c" 
+gcc "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Application" "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Container" "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Application" "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Container" "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Application" "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Container" "-ID:\\Programmation\\Git Hub\\DS_STARS\\Stars\\Stars" -O0 -g3 -Wall -c -fmessage-length=0 -o "Container\\container.o" "..\\Container\\container.c" 
+gcc "-LC:\\MinGW\\lib\\SDL2" -o Stars "Application\\app.o" "Container\\container.o" "Stars\\star.o" "src\\main.o" -lmingw32 -lSDL2main -lSDL2 -lm 
+
+18:59:24 Build Finished. 0 errors, 0 warnings. (took 1s.847ms)
+

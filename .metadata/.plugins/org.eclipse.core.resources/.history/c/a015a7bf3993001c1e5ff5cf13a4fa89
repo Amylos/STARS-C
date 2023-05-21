@@ -1,0 +1,216 @@
+/**
+ * @file: 	star.c
+ *
+ * @date: 	<date>
+ * @author: <author>
+ *
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <SDL2/SDL.h>
+#include <assert.h>
+#include <math.h>
+#include "star.h"
+
+/**
+ * @brief The star entity structure.
+ * 		  Hidden structure, not externally exposed.
+ */
+	struct s_star{
+		SDL_Point	m_ptCenter;		/* Star center coordinates */
+		SDL_Point	m_ptVelocity;	/* Star speed vector */
+		SDL_Color	m_color;		/* Star RGBA color */
+		size_t		m_szBranches;	/* Star branches number */
+		int			m_iRadius;		/* Star global radius */
+		SDL_Point*	m_pVertices;	/* Pointer to the star polygon vertices */
+	};
+
+/**
+ * @brief Star "constructor".
+ *        Performs a star entity creation by allocating memory need by
+ *        the entity to store its parameters. Initializes the star
+ *        parameters with parameters passed to the function.
+ * 
+ * @param [in] ptCenter the point locating the star to create.
+ * @param [in] ptVelocity the velocity or speed of the star.
+ * @param [in] szBranches the number of branches of the star.
+ * @param [in] iRadius the external radius of the star.
+ * @param [in] color the RGBA color of the star.
+ * @return t_star* the pointer to the newly create star.
+ */
+t_star*StarNew(SDL_Point ptCenter, SDL_Point ptVelocity, size_t szBranches, int iRadius, SDL_Color color){
+	/**
+	 * @todo Implementing star "constructor".
+	 * 
+	 */
+
+	t_star*pStar = (t_star*)malloc(sizeof(t_star));
+	assert(pStar);
+
+	*pStar = (t_star){
+		.m_ptCenter 	= ptCenter,
+		.m_ptVelocity 	= ptVelocity,
+		.m_color	    = color,
+		.m_szBranches 	= szBranches,
+		.m_iRadius 		= iRadius,
+		.m_pVertices	= (SDL_Point*)malloc(sizeof(SDL_Point)*(szBranches*2+1)),
+	};
+
+	size_t k;
+	size_t nbSommets = szBranches*2;
+
+//	    for(k=0;k<nbSommets;k++){
+//	        pStar->m_pVertices[k]=(SDL_Point){
+//	            .x = ptCenter.x + iRadius*cos(k*2*M_PI/nbSommets)*((k%2==0)?1:STAR_INTERNAL_RADIUS_RATIO),
+//	            .y = ptCenter.y + iRadius*sin(k*2*M_PI/nbSommets)*((k%2==0)?1:STAR_INTERNAL_RADIUS_RATIO),
+//	        };
+//
+//	    }
+//		pStar->m_pVertices[k] = pStar->m_pVertices[0]; // Dernier point identique au premier
+
+	for(k = 0;k<nbSommets;k++){
+
+		pStar->m_pVertices[k] =(SDL_Point){
+			.x = ptCenter.x + iRadius*cos(k*2*M_PI/nSommets)*((k%2==0?)1:STAR_INTERNAL_RADIUS_RATIO),
+			.y = ptCenter.y + iRadius*sin(k*2*M_PI/nSommets)*((k%2==0?)1:STAR_INTERNAL_RADIUS_RATIO),
+		};
+
+		if(k%2 == 0){
+			pStar->m_pVertices[k] =(SDL_Point){
+				.x = ptCenter.x + iRadius*cos(k*2*M_PI/(nSommets)),
+				.y = ptCenter.y + iRadius*sin(k*2*M_PI/(nSommets)),
+			};
+		}
+		else{
+			pStar->m_pVertices[k] =(SDL_Point){
+				.x = ptCenter.x + iRadius*STAR_INTERNAL_RADIUS_RATIO*cos(k*2*M_PI/(nSommets)), // Les sommets impaire sont dans le rayon grand
+				.y = ptCenter.y + iRadius*STAR_INTERNAL_RADIUS_RATIO*sin(k*2*M_PI/(nSommets)),
+			};
+		}
+		pStar->m_pVertices[k] = pStar->m_pVertices[0]; // Dernier point identique au premier
+
+	return pStar;
+}
+
+
+/**
+ * @brief Star "destructor".
+ *        Performs the star destruction by freeing the memory allocated
+ *        by the "constructor".
+ * 
+ * @param [in] pStar pointer to the star entity to destroy.
+ * @return t_star* NULL. 
+ */
+t_star*StarDel(t_star*pStar){
+	assert(pStar);
+	/**
+	 * @todo Implementing star "destructor".
+	 * 
+	 */
+	free(pStar->m_pVertices);
+	free(pStar);
+
+	return NULL;
+}
+
+
+/**
+ * @brief Performs drawing of the star entity.
+ * 
+ * @param [in] pStar pointer to the star entity to be drawn.
+ * @param [in] pRenderer pointer to the renderer needed for drawing.
+ * @return t_star* NULL.
+ */
+t_star*StarDraw(const t_star*pStar, SDL_Renderer*pRenderer){
+	assert(pStar);
+	/**
+	 * @todo Implementing star drawing.
+	 * 
+	 */
+
+	SDL_SetRenderDrawColor(pRenderer, pStar->m_color.r, pStar->m_color.g, pStar->m_color.b, pStar->m_color.a);
+	SDL_RenderDrawLines(pRenderer, pStar->m_pVertices, pStar->m_szBranches*2+1);
+	SDL_RenderDrawPoint(pRenderer, pStar->m_ptCenter.x, pStar->m_ptCenter.y);
+
+
+	return NULL;
+}
+
+
+/**
+ * @brief Performs the moving of the star entity.
+ *        Moving takes place into an area: the space area.
+ *        This function must return a non null value in case
+ *        of over-crossing the space area limits.
+ * 
+ * @param [in] pStar pointer to the star entity to be moved.
+ * @param [in] pSpace pointer to structure delimiting the space area.
+ * @return t_star* a Non Null value in case of over-crossing,
+ *                 NULL otherwise.
+ */
+t_star*StarMove(t_star*pStar, SDL_Rect*pSpace){
+	assert(pStar);
+	assert(pSpace);
+	/**
+	 * @todo Implementing star moving.
+	 * 
+	 */
+
+	size_t k, nbSommets = pStar->m_szBranches*2+1;
+	for(k=0;k<nbSommets;k++){
+		pStar->m_pVertices[k].x += pStar->m_ptVelocity.x;
+		pStar->m_pVertices[k].y += pStar->m_ptVelocity.y;
+	}
+	pStar->m_ptCenter.x += pStar->m_ptVelocity.x;
+	pStar->m_ptCenter.y += pStar->m_ptVelocity.y;
+
+
+	if(pStar->m_ptCenter.x -pStar->m_iRadius <= pSpace->x){
+		return pStar;
+	}
+	if(pStar->m_ptCenter.y - pStar->m_iRadius < pSpace->y){
+		return pStar;
+	}
+
+	if(pStar->m_ptCenter.x >=pSpace->w + pSpace->x - pStar->m_iRadius){
+		return pStar;
+	}
+	if(pStar->m_ptCenter.y>=pSpace->h + pSpace->y - pStar->m_iRadius){
+		return pStar;
+	}
+
+	return NULL;
+}
+
+
+/**
+ * @brief Performs location offset of the star entity.
+ *        Moving the star entity location by the offset
+ *        value passed to the function.  
+ * 
+ * @param [in] pStar pointer to the star entity to which to make offset.
+ * @param [in] pOffset value of the offset to apply.
+ * @return t_star* NULL.
+ */
+t_star*StarOffset(t_star*pStar, SDL_Point*pOffset){
+	assert(pStar);
+	assert(pOffset);
+	/**
+	 * @todo Implementing star processing offset.
+	 * 
+	 */
+	size_t k, nbSommets = pStar->m_szBranches*2+1;
+		for(k=0;k<nbSommets;k++){
+			pStar->m_pVertices[k].x += pOffset->x;
+			pStar->m_pVertices[k].y += pOffset->y;
+		}
+		pStar->m_ptCenter.x += pOffset->x;
+		pStar->m_ptCenter.y += pOffset->y;
+
+
+	return NULL;
+}
+
+
